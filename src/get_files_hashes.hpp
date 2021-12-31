@@ -11,7 +11,7 @@
 #include <fcntl.h>
 
 #include "constants.hpp"
-#include "src/utils/error_exit.hpp"
+#include "utils/error_exit.hpp"
 #include "utils/hasher.hpp"
 
 using string = std::string;
