@@ -50,8 +50,9 @@ move_and_link(const string& filename,
 {
     int ret;
 
-    storepath = storedir + '/' + filehash[0] + filehash[1] +
-		((storedir.empty() || (storedir.back() != '/')) ? "/" : "") +
+    storepath = storedir +
+                ((storedir.empty() || (storedir.back() != '/')) ? "/" : "") +
+                filehash[0] + filehash[1] + '/' +
 		basename(filename.c_str()) + '-' + filehash;
 
     ret = move_file(filename.c_str(), storepath.c_str());
