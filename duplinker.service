@@ -1,0 +1,7 @@
+[Unit]
+Description=Link similar files on filesystem together
+
+[Service]
+Type=oneshot
+User=erfan
+ExecStart=/home/erfan/ntc-docs/bins/duplinker /etc/deduper/config.json

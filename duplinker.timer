@@ -1,0 +1,12 @@
+[Unit]
+Description=Link ntcdocs similar files together every night
+
+[Timer]
+OnCalendar=daily
+AccuracySec=1h
+# This should run at about 4AM
+OnActiveSec=3h
+RandomizedDelaySec=3600
+
+[Install]
+WantedBy=timers.target
